@@ -2,7 +2,7 @@
 
 The IC DSA website was originally hosted on Wix. We have decided to [cancel our subscription with Wix](https://boycottwix.org/), an Israeli company, in solidarity with Palestine and [the BDS movement](https://bdsmovement.net/). We decided to go with GitHub Pages to make it easier for others to collaborate on the website and ensure portability in the future.
 
-A development (demo) version of the website is available at <https://iowacitydsa.org>.
+The live version of the website is available at <https://iowacitydsa.org>.
 
 Members with varying technical skills can contribute to the development of the website and its content. 
 
