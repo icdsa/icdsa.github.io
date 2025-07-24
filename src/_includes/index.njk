@@ -1,7 +1,7 @@
 {% extends "base.njk" %}
 
 {% block main %}
-<main class="overflow">
+<main class="no-overflow">
 
     <img class="image-fit image-background w-whole h-whole obscure" src="./assets/images/dsa_group.png" alt="Group photo of Iowa City DSA members taken a long time ago."/>
     <section id="hero" class="h-whole w-whole fade-in">
@@ -19,24 +19,23 @@
             {% endfor %}
         </ul>
     </section>
+    <script>
+        const items = document.querySelectorAll('.fade-in');
+
+        const active = function(entries){
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                entry.target.classList.add('inview'); 
+                }else{
+                    entry.target.classList.remove('inview'); 
+                }
+            });
+        }
+        const io2 = new IntersectionObserver(active);
+        for(let i=0; i < items.length; i++){
+            io2.observe(items[i]);
+        }
+    </script>
 </main>
-<script>
 
-    const items = document.querySelectorAll('.fade-in');
-
-    const active = function(entries){
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-            entry.target.classList.add('inview'); 
-            }else{
-                entry.target.classList.remove('inview'); 
-            }
-        });
-    }
-    const io2 = new IntersectionObserver(active);
-    for(let i=0; i < items.length; i++){
-        io2.observe(items[i]);
-    }
-
-</script>
 {% endblock %}

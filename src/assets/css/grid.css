@@ -45,7 +45,7 @@ header {
 @media screen and (min-width: 810px) {
     #site-header {
         grid-template-areas: "title . nav";
-        grid-template-columns: auto 1fr 270px;
+        grid-template-columns: auto 1fr;
     }
 }
 
