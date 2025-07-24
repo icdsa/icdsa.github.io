@@ -16,7 +16,7 @@
         <main>
             <section class="m-md text-justify">
                 <h2>{{ title }}</h2>
-                {{ content | safe }}
+                {{ content | urlize | safe }}
             </section>
         </main>
         {% endblock %}
