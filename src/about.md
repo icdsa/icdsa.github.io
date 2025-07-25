@@ -1,15 +1,13 @@
 ---
-title: About Us
+title: Why We Are Here
 layout: base.njk
 ---
 
-## Why We Are Here
+As **Democratic Socialists**, we believe that our economy should be built democratically, by and for working people, not by billionaires for profit. We recognize that our economic system is rooted in white supremacy and the capitalist class depends on racism to divide and oppress the working class.
 
-As Democratic Socialists, we believe that our economy should be built democratically, by and for working people, not by billionaires for profit. We recognize that our economic system is rooted in white supremacy and the capitalist class depends on racism to divide and oppress the working class.
+We know that **political power** extends beyond the ballot box—political power is created whenever people organize together, and it can be expressed in many different ways. **We can build power together through direct action, mutual aid, protest, and education.** We believe many different tactics, including but not limited to electoral politics, will be required to create a truly free and liberated society.
 
-We know that political power extends beyond the ballot box—political power is created whenever people organize together, and it can be expressed in many different ways. We can build power together through direct action, mutual aid, protest, and education. We believe many different tactics, including but not limited to electoral politics, will be required to create a truly free and liberated society.
-
-We regard democracy as both a means and an end. DSA sees democratic modes of social, political, and economic organization as a good in itself, and regards democratic decision-making as the most legitimate means of obtaining those ends. In practice, this means we are a deeply participatory organization, and encourage all levels of involvement. 
+We regard democracy as both a means and an end. **DSA** sees democratic modes of social, political, and economic organization as a good in itself, and regards democratic decision-making as the most legitimate means of obtaining those ends. In practice, this means we are a deeply participatory organization, and encourage all levels of involvement. 
 
 ## Capitalism is the problem.
 
@@ -18,13 +16,18 @@ The simplest way to identify capitalism is based on private corporation interest
 
 ### Characteristics of capitalism:
 Capitalism isn’t just a collection of individuals, but individuals grouped in social classes; primarily the Capitalist/owner class, and the working/poor class. Capitalists and workers have very different interests. Capitalists may not be motivated by greed but by market pressures. Workers are forced to perform labor for survival. This system creates enormous wealth but also great misery for the majority.
+<br><br>
+<h3 style="text-align: center;">
+<strong>We have a better world to win!</strong>
+</h3>
 
-We have a better world to win!
-A socialist movement is the solution.
+<h3 style="text-align: center; color: #EC1F27;">
+<strong>A socialist movement is the solution.</strong>
+</h3>
 
 
 ### What is Democratic Socialism?
-Democratic Socialism is about broadening freedom and democracy into all areas of life. It is also a popular democracy, that represents the interests of the working-class people and not the wealthy elites. It is a strong multiracial working-class movement, pursuing revolutionary change on the path to the abolition of capitalism. It is collective action building the society we want and we need.
+**Democratic Socialism** is about broadening freedom and democracy into all areas of life. It is also a popular democracy, that represents the interests of the working-class people and not the wealthy elites. It is a strong multiracial working-class movement, pursuing revolutionary change on the path to the abolition of capitalism. It is collective action building the society we want and we need.
 
 ## We are fighting for:
 
