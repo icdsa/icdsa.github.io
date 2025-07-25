@@ -1,0 +1,10 @@
+{% extends "base.njk" %}
+
+{% block main %}
+        <main>
+            <section class="m-md text-justify">
+                <h2>{{ title }}</h2>
+                {{ content | safe }}
+            </section>
+        </main>
+{% endblock %}
