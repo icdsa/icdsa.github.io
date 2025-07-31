@@ -5,6 +5,7 @@
 */
 body {
     display: grid;
+    min-height: 100vh;
     grid-template-areas:
     "header"
     "main"
@@ -45,7 +46,7 @@ header {
 @media screen and (min-width: 810px) {
     #site-header {
         grid-template-areas: "title . nav";
-        grid-template-columns: auto 1fr 270px;
+        grid-template-columns: auto 1fr;
     }
 }
 
@@ -68,4 +69,24 @@ footer {
             "socials map"
             "copyright copyright";
     }
+}
+
+.fade-in {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+.inview {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.cover{
+    background-color: white;
+    padding: 1%;
+    border-radius: 15px;
 }

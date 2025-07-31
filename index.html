@@ -16,10 +16,13 @@
         <h1 id="site-title" class="text-nowrap link-black"><a href="/">Iowa City DSA</a></h1>
         <nav id="site-nav">
             <ul class="list-linear list-spread">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/membership">What Members Do</a></li>
+                <li><a href="/get-involved">Get Involved</a></li>
                 <li><a href="/events">Events</a></li>
                 <li><a href="https://act.dsausa.org/donate/membership/">Join</a></li>
                 <li><a href="https://donorbox.org/icdsa-donation">Donate</a></li>
-                <li><a href="/report-a-grievance/">Report a Greivance</a></li>
+                <li><a href="/report-a-grievance/">Report a Grievance</a></li>
             </ul>
         </nav> 
     </div>
@@ -27,19 +30,21 @@
                     
         
 <main class="no-overflow">
-    <section id="hero" class="h-whole w-whole">
-        <img class="image-fit image-background w-whole h-whole obscure" src="./assets/images/dsa_group.png" alt="Group photo of Iowa City DSA members taken a long time ago."" />
+
+    <img class="image-fit image-background w-whole h-whole obscure" src="./assets/images/dsa_group.png" alt="Group photo of Iowa City DSA members taken a long time ago."/>
+    <section id="hero" class="h-whole w-whole fade-in">
         <div class="text-red text-size-rxl text-center blur text-shadow h-parent">Iowa City Democratic Socialists of America</span>
     </section>
-    <section class="m-md text-line-sm text-justify" id="intro">
-        <p>We are the Iowa City chapter of the Democratic Socialists of America, the largest socialist organization in the United States.</p>
-<p>As Democratic Socialists, we are committed to empowering ordinary people in the workplace and the economy. We know the only way for us to achieve the broad social, racial, economic, and environmental transformation we seek is with bold principles and a broad democratic movement.</p>
-<p>Here in Iowa City, we are currently working on a campaign to achieve housing justice, beginning with our movement to organize an Iowa City Tenants Union. By coming together, we will be able to address our concerns and achieve fair, affordable housing for all.</p>
-<p>A better world is possible. Let’s work for it, together.</p>
+    <section class="m-md text-line-sm text-justify fade-in cover" id="intro">
+        <h2>Welcome to Iowa City DSA! We’re excited to have you!</h2>
+<p>The <strong>DSA</strong> is the fastest-growing socialist organization in the United States. We need you (and your friends, family, coworkers, and neighbors) to pitch in, show up, and win a new world. There’s no time to lose and everything to win.</p>
+<p>We are <strong>Democratic Socialists</strong> because we share a vision of a humane international social order based on democratic planning and market mechanisms to achieve equitable resource distribution, meaningful work, a healthy environment, sustainable growth, gender, sexual, and racial equality, and non-oppressive relationships.</p>
+<p><strong>DSA</strong> is not a political party or a movement with a narrow, unchanging view of how to achieve our collective political goals. Rather, it’s a collection of organizers with the ultimate goal of building our members’ collective power and organizing skills at the hyperlocal level while acting together as a cohesive body against capitalism.</p>
+<p>The principal goal of <strong>DSA</strong> is the complete elimination of capitalist modes of economic organization and all interrelated forms of oppression. <strong>DSA</strong> members typically believe that capitalism is inseparable from racism, misogyny, ableism, anti-LGBTQIA+ violence, classism, and the myriad intersecting forms of oppression we experience and witness daily.</p>
 
     </section>
 
-    <section id="projects">
+    <section id="projects" class="m-md text-line-sm text-justify fade-in cover">
         <h2>Current Projects</h2>
         <ul>
             
@@ -53,7 +58,25 @@
             
         </ul>
     </section>
+    <script>
+        const items = document.querySelectorAll('.fade-in');
+
+        const active = function(entries){
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                entry.target.classList.add('inview'); 
+                }else{
+                    entry.target.classList.remove('inview'); 
+                }
+            });
+        }
+        const io2 = new IntersectionObserver(active);
+        for(let i=0; i < items.length; i++){
+            io2.observe(items[i]);
+        }
+    </script>
 </main>
+
 
 
         <footer class="h-quarter bg-black text-white link-red">
@@ -66,11 +89,13 @@
         <li><a href="https://github.com/wjdenny/icdsa"><i class="fa-brands fa-github"></i><span class="sm-hide">GitHub</span></a></li>
     </ul>
     <ul id="map" class="list-linear list-spread v-center p-sm m-auto">
-        <li><a href="/about">About</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/membership">What Members Do</a></li>
+        <li><a href="/get-involved">Get Involved</a></li>
         <li><a href="/events">Events</a></li>
         <li><a href="https://act.dsausa.org/donate/membership/">Join</a></li>
         <li><a href="https://donorbox.org/icdsa-donation">Donate</a></li>
-        <li><a href="/report-a-grievance/">Report a Greivance</a></li>
+        <li><a href="/report-a-grievance/">Report a Grievance</a></li>
     </ul>
     <div id="copyright" class="flex v-center h-center text-black-4">&copy;2024 Iowa City Democratic Socialists of America</div>
 </footer>

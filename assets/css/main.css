@@ -101,5 +101,5 @@ pre code { display: block; background-color: #d7d7d7; width: 100%; padding: 0.5r
 .blur { filter: blur(1px); }
 .obscure { filter: brightness(25%) blur(15px); transform: scale(1.06); }
 .image-fit { background-size: cover; background-repeat: no-repeat; background-position: center center; }
-.image-background { position: absolute; z-index: -2; }
+.image-background { position: fixed; z-index: -2; }
 section:has(> .image-background) { position: relative; }
