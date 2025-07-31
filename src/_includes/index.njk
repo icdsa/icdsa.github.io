@@ -2,15 +2,16 @@
 
 {% block main %}
 <main class="no-overflow">
-    <section id="hero" class="h-whole w-whole">
-        <img class="image-fit image-background w-whole h-whole obscure" src="./assets/images/dsa_group.png" alt="Group photo of Iowa City DSA members taken a long time ago."" />
+
+    <img class="image-fit image-background w-whole h-whole obscure" src="./assets/images/dsa_group.png" alt="Group photo of Iowa City DSA members taken a long time ago."/>
+    <section id="hero" class="h-whole w-whole fade-in">
         <div class="text-red text-size-rxl text-center blur text-shadow h-parent">Iowa City Democratic Socialists of America</span>
     </section>
-    <section class="m-md text-line-sm text-justify" id="intro">
+    <section class="m-md text-line-sm text-justify fade-in cover" id="intro">
         {{ content | safe }}
     </section>
 
-    <section id="projects">
+    <section id="projects" class="m-md text-line-sm text-justify fade-in cover">
         <h2>Current Projects</h2>
         <ul>
             {% for project in collections.projects %}
@@ -18,5 +19,23 @@
             {% endfor %}
         </ul>
     </section>
+    <script>
+        const items = document.querySelectorAll('.fade-in');
+
+        const active = function(entries){
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                entry.target.classList.add('inview'); 
+                }else{
+                    entry.target.classList.remove('inview'); 
+                }
+            });
+        }
+        const io2 = new IntersectionObserver(active);
+        for(let i=0; i < items.length; i++){
+            io2.observe(items[i]);
+        }
+    </script>
 </main>
+
 {% endblock %}
