@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/assets/css/layout.css">
+        <link rel="stylesheet" href="/assets/css/header.css">
+        <link rel="stylesheet" href="/assets/css/body.css">
+        <link rel="stylesheet" href="/assets/css/footer.css">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <header>
+            <a id="logo" href="/">
+                <img src="/assets/images/Main_Logo_Square_Small.png" eleventy:widths="60px" eleventy:formats="png" alt="DSA logo showing a white and black hand grasping each other underneath a rose." /></a>
+                <h1>Iowa City DSA</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/about"><i class="fa-solid fa-circle-question"></i><p>About</p></a></li>
+                    <li><a href="/membership"><i class="fa-solid fa-people-group"></i><p>Membership</p></a></li>
+                    {# <li><a href="/get-involved">Get Involved</a></li> #}
+                    <li><a href="/events"><i class="fa-solid fa-calendar"></i><p>Events</p></a></li>
+                    <li><a href="/docs"><i class="fa-solid fa-file"></i><p>Docs</p></a></li>
+                    <li><a href="https://donorbox.org/icdsa-donation"><i class="fa-solid fa-circle-dollar-to-slot"></i><p>Donate</p></a></li>
+                    <li><a href="https://act.dsausa.org/donate/membership/"><i class="fa-solid fa-hand-fist"></i><p>Join</p></a></li>                    
+                    {# <li><a href="/report-a-grievance/">Report a Grievance</a></li> #}
+                </ul>
+            </nav> 
+        </header>
+                
+        <main>
+            <h2>{{ title }}</h2>
+            {{ content | urlize | safe }}
+        </main>
+
+        <footer>
+            <ul id="socials">
+                <li><a href="https://x.com/dsaiowacity"><i class="fa-brands fa-x-twitter"></i><span>X</span></a></li>
+                <li><a href="https://www.facebook.com/IowaCityDSA/"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a></li>
+                <!-- <li><a href="#"><i class="fa-brands fa-mastodon"></i><span>Mastodon</span></a></li> -->
+                <li><a href="https://discord.com/invite/rkqkEKvCyB"><i class="fa-brands fa-discord"></i><span>Discord</span></a></li>
+                <li><a href="https://www.instagram.com/iowacitydsa/"><i class="fa-brands fa-instagram"></i></i><span>Instagram</span></a></li>
+                <li><a href="https://github.com/wjdenny/icdsa"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
+            </ul>
+            <div id="copyright">&copy;2024 Iowa City Democratic Socialists of America</div>
+        </footer>
+    </body>
+</html>

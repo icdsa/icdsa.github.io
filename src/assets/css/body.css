@@ -1,0 +1,19 @@
+main {
+    margin: 1rem 2rem;
+    line-height: 1.3rem;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+}
+
+main img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+main p {
+    margin: 1rem 0;
+}

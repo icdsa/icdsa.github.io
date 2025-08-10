@@ -1,0 +1,32 @@
+footer {
+    background-color: var(--color-dsa-red);
+    color: var(--color-dsa-black);
+    padding: 2rem;
+}
+
+footer a { 
+    color: var(--color-dsa-black) !important;
+}
+
+#socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#socials li {
+    display: inline;
+    padding: 0 0.5rem;
+}
+
+#socials a span {
+    display: none;
+}
+
+#copyright {
+    padding: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+}
