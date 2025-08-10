@@ -9,7 +9,10 @@ Sint alias et quia delectus dolorem soluta quisquam aspernatur nihil. Totam non 
 
 Architecto molestias quo. Quis perspiciatis labore. Repudiandae provident odit sequi consequatur.
 
+![](https://placehold.co/600x400?text=block){.block width=600}
+
 ![](https://placehold.co/600x400?text=right){.float-right width=240} Commodi quo consequatur perspiciatis at. Voluptatem saepe repellendus qui nihil sunt voluptatibus qui. Ut ab nostrum ea vel quos ipsum sequi. Dolores atque quisquam quaerat. Quia quas dolores ullam cumque et accusamus non asperiores. Dolorem delectus perspiciatis explicabo optio vel. ![](https://placehold.co/600x400?text=left){.float-left width=240} Consequuntur fuga quo qui amet ipsa quo consequatur perferendis. Rerum a quas eos. Eos sequi sunt. Quod odit qui error inventore.
+
 
 ![](https://placehold.co/600x400?text=left){.float-left width=240} Ipsam exercitationem illo voluptatem nemo neque qui est. Rerum laboriosam doloremque 
 saepe. Qui et quia omnis deleniti illum delectus et nesciunt. Exercitationem vitae rem nihil accusantium et. Enim dolor aliquid et.

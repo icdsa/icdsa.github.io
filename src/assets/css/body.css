@@ -1,7 +1,8 @@
 main {
     margin: 1rem 2rem;
     line-height: 1.3rem;
-    overflow: hidden;
+    width: calc(100vw - 4rem);
+
 }
 
 h2 {
@@ -9,8 +10,6 @@ h2 {
 }
 
 main img {
-    /* height: 100%;
-    width: 100%; */
     margin-bottom: 1rem;
 }
 
@@ -23,37 +22,52 @@ main p {
     margin: 1rem auto;
 }
 
-@media screen and (min-width: 640px) {
+main img {
+    width: 100%;
+    object-fit: contain;
+    background-color: var(--color-dsa-black);
+    border-radius: 0.5ch; 
+}
+
+@media screen and (min-width: 560px) {
     main {
-        margin: 1rem 6rem;
+        margin: 1rem auto;
+    }
+
+    main p {
+        /* width: 45ch; */
+        margin: 1rem auto;
     }
 
     .float-left {
         float: inline-start;
-        margin: 1rem; 
-        clear: both;
-    }
-
-    .float-right {
-        float: inline-end;
-        margin: 1rem; 
-        clear: both;
-    }
-}
-
-@media screen and (min-width: 960px) {
-    .float-left {
+        margin-inline-end: 1rem; 
         clear: inline-start;
     }
 
     .float-right {
+        float: inline-end;
+        margin-inline-start: 1rem; 
         clear: inline-end;
+    }
+
+    main img {
+        width: initial;
+        object-fit: contain;
+        background-color: var(--color-dsa-black);   
+        border-radius: 2%; 
+    }
+
+    .block {
+        width: 100%;
+        object-fit: contain;
+        background-color: var(--color-dsa-black);
+        border-radius: 0.5ch; 
     }
 }
 
-@media screen and (min-width: 1200px) {
-    main {
-        width: 1000px;
-        margin: 1rem auto;
+@media screen and (min-width: 780px) {
+    main p {
+        width: 75ch;
     }
 }
