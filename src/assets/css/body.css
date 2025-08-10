@@ -15,18 +15,38 @@ main img {
 
 main p {
     margin: 1rem 0;
+    overflow: hidden;
 }
 
 .float-left, .float-right {
+    margin: 1rem auto;
+    margin-top: 0;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    object-fit: fit-content;
+    background-color: var(--color-dsa-black);
+    border-radius: 0.5ch; 
     display: block;
     margin: 1rem auto;
 }
 
-main img {
-    width: 100%;
-    object-fit: contain;
-    background-color: var(--color-dsa-black);
-    border-radius: 0.5ch; 
+code, pre {
+    background: var(--color-dsa-black);
+    color: var(--color-dsa-red);
+    font-size: 16px;        
+    padding: 10px;
+    display: block;
+}
+
+pre {
+    padding: 16px;
+    border-radius: 1ch;    
+    padding: 16px 0;
+    overflow: scroll;
+    clear: both;
 }
 
 @media screen and (min-width: 560px) {
@@ -43,12 +63,14 @@ main img {
         float: inline-start;
         margin-inline-end: 1rem; 
         clear: inline-start;
+        width: revert-layer;
     }
 
     .float-right {
         float: inline-end;
         margin-inline-start: 1rem; 
         clear: inline-end;
+        width: revert-layer;
     }
 
     main img {
@@ -67,7 +89,7 @@ main img {
 }
 
 @media screen and (min-width: 780px) {
-    main p {
+    main {
         width: 75ch;
     }
 }
