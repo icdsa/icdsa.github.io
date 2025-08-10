@@ -39,7 +39,7 @@ For some reason, URLs that have slashes do not render correctly regardless of wh
 
 ### Headings
 
-The title of each document is represented as a level 2 heading in the finished page. The "top level" header of Markdown documents must be level 3 to align with this template. The heading of this section ("Headings") is as level 3 header.
+The title of each document is represented as a level 2 heading in the finished page. The "top level" header of Markdown documents must be level 3 to align with this template. The heading of this section ("Headings") is a level 3 header.
 
 ```
 #### Level 4
