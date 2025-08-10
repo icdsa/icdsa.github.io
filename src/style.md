@@ -18,6 +18,25 @@ For *italics*, use single asterisks.
 ```
 For *italics*, use single asterisks.
 
+### Links
+
+```
+Links can be made [like this](/).
+```
+Links can be made [like this](/). External links open a new window by default.
+
+#### Problem
+
+For some reason, URLs that have slashes do not render correctly regardless of whether its markdown or html.
+
+- [a markdown link with trailing slash](https://www.markdownguide.org/)
+- <a href="https://www.markdownguide.org/">an HTML link with trailing slash</a>
+- [a markdown link without trailing slash](https://www.markdownguide.org)
+- <a href="https://www.markdownguide.org">an HTML link without trailing slash</a>
+- [a markdown link without trailing slash but with other slashes](https://act.dsausa.org/donate/membership)
+- <a href="https://act.dsausa.org/donate/membership">an HTML link without trailing slash but with other slashes</a>
+- [Join us](//act.dsausa.org/donate/membership){.button}
+
 ### Headings
 
 The title of each document is represented as a level 2 heading in the finished page. The "top level" header of Markdown documents must be level 3 to align with this template. The heading of this section ("Headings") is as level 3 header.
