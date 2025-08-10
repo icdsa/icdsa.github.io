@@ -1,0 +1,59 @@
+main {
+    margin: 1rem 2rem;
+    line-height: 1.3rem;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+}
+
+main img {
+    /* height: 100%;
+    width: 100%; */
+    margin-bottom: 1rem;
+}
+
+main p {
+    margin: 1rem 0;
+}
+
+.float-left, .float-right {
+    display: block;
+    margin: 1rem auto;
+}
+
+@media screen and (min-width: 640px) {
+    main {
+        margin: 1rem 6rem;
+    }
+
+    .float-left {
+        float: inline-start;
+        margin: 1rem; 
+        clear: both;
+    }
+
+    .float-right {
+        float: inline-end;
+        margin: 1rem; 
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .float-left {
+        clear: inline-start;
+    }
+
+    .float-right {
+        clear: inline-end;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        width: 1000px;
+        margin: 1rem auto;
+    }
+}

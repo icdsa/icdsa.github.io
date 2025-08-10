@@ -1,0 +1,65 @@
+/* On small screens, the header spans the top 60px of the screen with the logo
+on the left, followed by the site title. A second row of labeled icons provides
+a navigation menu. */
+
+
+header {
+    display: grid;
+    grid-template-areas: 
+        "logo title"
+        "menu menu";
+    grid-template-columns: auto auto;
+    gap: 0rem;
+    background-color: var(--color-dsa-red);
+}
+
+#logo { grid-area: logo; }
+header nav { grid-area: menu; }
+
+h1 {
+    line-height: var(--logo-size);
+    margin: 0.5rem 0 0 0;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+header nav { 
+    margin: 0 1em;
+}
+
+nav ul { 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    width: auto;
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+nav a p {
+    font-size: 0.6rem
+}
+
+@media screen and (min-width: 560px) {
+    header {
+        grid-template-areas: "logo title menu";
+        grid-template-columns: var(--logo-size) auto auto;
+        height: var(--logo-size);
+    }
+
+    h1 {
+        margin: 0
+    }
+    
+    nav ul {
+        margin-top: 0.75rem;
+        justify-content: end;
+    }
+}
