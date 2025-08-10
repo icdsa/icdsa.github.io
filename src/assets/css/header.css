@@ -47,8 +47,19 @@ nav a p {
     font-size: 0.6rem
 }
 
-@media (min-width: 460) {
+@media screen and (min-width: 560px) {
     header {
-        background-color: black
+        grid-template-areas: "logo title menu";
+        grid-template-columns: var(--logo-size) auto auto;
+        height: var(--logo-size);
+    }
+
+    h1 {
+        margin: 0
+    }
+    
+    nav ul {
+        margin-top: 0.75rem;
+        justify-content: end;
     }
 }
