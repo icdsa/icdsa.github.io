@@ -3,7 +3,7 @@ title: The Mesh Network Project
 layout: base.njk
 ---
 
-<img src="/assets/images/meshnet_router.jpg" style="float:right;margin-left: 30px" />
+<img src="/assets/images/meshnet_router.jpg" alt="meshnet router" />
 
 The mesh network project is working to create a citizen-owned and operated network to provide internet access to the Iowa City community.  ICDSA is partnering with [Public Space One](http://www.publicspaceone.com/) to establish our first hubs in the network.
 
