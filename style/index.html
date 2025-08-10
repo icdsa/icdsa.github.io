@@ -40,6 +40,21 @@
 <pre><code>For *italics*, use single asterisks.
 </code></pre>
 <p>For <em>italics</em>, use single asterisks.</p>
+<h3>Links</h3>
+<pre><code>Links can be made [like this](/).
+</code></pre>
+<p>Links can be made <a href="/">like this</a>. External links open a new window by default.</p>
+<h4>Problem</h4>
+<p>For some reason, URLs that have slashes do not render correctly regardless of whether its markdown or html.</p>
+<ul>
+<li><a <a="" href="http://href=" https:="" www.markdownguide.org="" "="">a">href="https://www.markdownguide.org/">a</a> markdown link with trailing slash</li>
+<li><a <a="" href="http://href=" https:="" www.markdownguide.org="" "="">an">href="https://www.markdownguide.org/">an</a> HTML link with trailing slash</li>
+<li><a href="https://www.markdownguide.org">a markdown link without trailing slash</a></li>
+<li><a href="https://www.markdownguide.org">an HTML link without trailing slash</a></li>
+<li><a <a="" href="http://href=" https:="" act.dsausa.org="" donate="" membership"="">a">href="https://act.dsausa.org/donate/membership">a</a> markdown link without trailing slash but with other slashes</li>
+<li><a <a="" href="http://href=" https:="" act.dsausa.org="" donate="" membership"="">an">href="https://act.dsausa.org/donate/membership">an</a> HTML link without trailing slash but with other slashes</li>
+<li><a <a="" href="http://href=" act.dsausa.org="" donate="" membership""="">href="//act.dsausa.org/donate/membership"</a> class="button">Join us</li>
+</ul>
 <h3>Headings</h3>
 <p>The title of each document is represented as a level 2 heading in the finished page. The &quot;top level&quot; header of Markdown documents must be level 3 to align with this template. The heading of this section (&quot;Headings&quot;) is as level 3 header.</p>
 <pre><code>#### Level 4
