@@ -1,7 +1,8 @@
 main {
     margin: 1rem 2rem;
     line-height: 1.3rem;
-    overflow: hidden;
+    width: calc(100vw - 4rem);
+
 }
 
 h2 {
@@ -9,43 +10,67 @@ h2 {
 }
 
 main img {
-    /* height: 100%;
-    width: 100%; */
     margin-bottom: 1rem;
 }
 
 main p {
     margin: 1rem 0;
+    overflow: hidden;
 }
 
 .float-left, .float-right {
+    margin: 1rem auto;
+    margin-top: 0;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    object-fit: fit-content;
+    background-color: var(--color-dsa-black);
+    border-radius: 0.5ch; 
     display: block;
     margin: 1rem auto;
 }
 
-main img {
-    width: 100%;
-    object-fit: contain;
-    background-color: var(--color-dsa-black);
-    border-radius: 0.5ch; 
+code, pre {
+    background: var(--color-dsa-black);
+    color: var(--color-dsa-red);
+    font-size: 16px;        
+    padding: 10px;
+    display: block;
 }
 
-@media screen and (min-width: 460px) {
+pre {
+    padding: 16px;
+    border-radius: 1ch;    
+    padding: 16px 0;
+    overflow: scroll;
+    clear: both;
+}
+
+@media screen and (min-width: 560px) {
     main {
-        width: 45ch;
+        margin: 1rem auto;
+    }
+
+    main p {
+        /* width: 45ch; */
         margin: 1rem auto;
     }
 
     .float-left {
         float: inline-start;
         margin-inline-end: 1rem; 
-        clear: both;
+        clear: inline-start;
+        width: revert-layer;
     }
 
     .float-right {
         float: inline-end;
         margin-inline-start: 1rem; 
-        clear: both;
+        clear: inline-end;
+        width: revert-layer;
     }
 
     main img {
@@ -54,18 +79,17 @@ main img {
         background-color: var(--color-dsa-black);   
         border-radius: 2%; 
     }
+
+    .block {
+        width: 100%;
+        object-fit: contain;
+        background-color: var(--color-dsa-black);
+        border-radius: 0.5ch; 
+    }
 }
 
 @media screen and (min-width: 780px) {
     main {
         width: 75ch;
-        margin: 1rem auto;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    main {
-        width: 75ch;
-        margin: 1rem auto;
     }
 }

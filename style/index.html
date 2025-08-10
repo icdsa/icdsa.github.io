@@ -1,354 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <title>Authoring Style Guide</title>
-        
+        <link rel="stylesheet" href="/assets/css/layout.css">
+        <link rel="stylesheet" href="/assets/css/header.css">
+        <link rel="stylesheet" href="/assets/css/body.css">
+        <link rel="stylesheet" href="/assets/css/footer.css">
+        <title>Style and Authoring Guide</title>
     </head>
-    <body class="full-height text-black link-red-1 text-sans-serif m0">
-        <header class="link-black text-black bg-red">
-    <a id="site-logo" href="/"><picture><source type="image/avif" srcset="/img/cZf9nZzZ_C_rHAji-320.avif 320w, /img/cZf9nZzZ_C_rHAji-760.avif 760w, /img/cZf9nZzZ_C_rHAji-1500.avif 1500w" sizes="auto"><source type="image/webp" srcset="/img/cZf9nZzZ_C_rHAji-320.webp 320w, /img/cZf9nZzZ_C_rHAji-760.webp 760w, /img/cZf9nZzZ_C_rHAji-1500.webp 1500w" sizes="auto"><img loading="lazy" decoding="async" src="/img/cZf9nZzZ_C_rHAji-320.png" class="h-sm w-sm" alt="DSA logo showing a white and black hand grasping each other underneath a rose." width="1500" height="1500" srcset="/img/cZf9nZzZ_C_rHAji-320.png 320w, /img/cZf9nZzZ_C_rHAji-760.png 760w, /img/cZf9nZzZ_C_rHAji-1500.png 1500w" sizes="auto"></picture></a>
-    <div id="site-header" class="p-sm v-base">
-        <h1 id="site-title" class="text-nowrap link-black"><a href="/">Iowa City DSA</a></h1>
-        <nav id="site-nav">
-            <ul class="list-linear list-spread">
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/membership">What Members Do</a></li>
-                <li><a href="/get-involved">Get Involved</a></li>
-                <li><a href="/events">Events</a></li>
-                <li><a href="https://act.dsausa.org/donate/membership/">Join</a></li>
-                <li><a href="https://donorbox.org/icdsa-donation">Donate</a></li>
-                <li><a href="/report-a-grievance/">Report a Grievance</a></li>
-            </ul>
-        </nav> 
-    </div>
-</header>
+    <body>
+        <header>
+            <a id="logo" href="/">
+                <img src="/img/cZf9nZzZ_C_rHAji-60.png" alt="DSA logo showing a white and black hand grasping each other underneath a rose." loading="lazy" decoding="async" width="60" height="60"></a>
+                <h1>Iowa City DSA</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="/about"><i class="fa-solid fa-circle-question"></i><p>About</p></a></li>
+                    <li><a href="/membership"><i class="fa-solid fa-people-group"></i><p>Membership</p></a></li>
                     
-        
+                    <li><a href="/events"><i class="fa-solid fa-calendar"></i><p>Events</p></a></li>
+                    <li><a href="/docs"><i class="fa-solid fa-file"></i><p>Docs</p></a></li>
+                    <li><a href="https://donorbox.org/icdsa-donation"><i class="fa-solid fa-circle-dollar-to-slot"></i><p>Donate</p></a></li>
+                    <li><a href="https://act.dsausa.org/donate/membership/"><i class="fa-solid fa-hand-fist"></i><p>Join</p></a></li>                    
+                    
+                </ul>
+            </nav> 
+        </header>
+                
         <main>
-            <section class="m-md text-justify">
-                <h2>Authoring Style Guide</h2>
-                <p>This document provides examples of the Iowa City DSA style guide, as well as the classes and the template functions used for various parts of a website. This is intended to be documentation for Iowa City DSA members to write updates to the website. Cat images lovingly delivered by <a href="https://robohash.org">Robohash.org</a>.</p>
-<h2>CSS classes</h2>
-<h3>Text color</h3>
-<p>These CSS classes can be used to set the colors of text in a template or Markdown file. It is recommended to stick to the DSA color palette defined here.</p>
-<table>
-<thead>
-<tr>
-<th>CSS Class</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.text-red</code></td>
-<td><span class="text-red">.text-red</span></td>
-</tr>
-<tr>
-<td><code>.text-red-1</code></td>
-<td><span class="text-red-1">.text-red-1</span></td>
-</tr>
-<tr>
-<td><code>.text-red-2</code></td>
-<td><span class="text-red-2">.text-red-2</span></td>
-</tr>
-<tr>
-<td><code>.text-red-3</code></td>
-<td><span class="text-red-3">.text-red-3</span></td>
-</tr>
-<tr>
-<td><code>.text-red-4</code></td>
-<td><span class="text-red-4">.text-red-4</span></td>
-</tr>
-<tr>
-<td><code>.text-black</code></td>
-<td><span class="text-black">.text-black</span></td>
-</tr>
-<tr>
-<td><code>.text-black-1</code></td>
-<td><span class="text-black-1">.text-black-1</span></td>
-</tr>
-<tr>
-<td><code>.text-black-2</code></td>
-<td><span class="text-black-2">.text-black-2</span></td>
-</tr>
-<tr>
-<td><code>.text-black-3</code></td>
-<td><span class="text-black-3">.text-black-3</span></td>
-</tr>
-<tr>
-<td><code>.text-black-4</code></td>
-<td><span class="text-black-4">.text-black-4</span></td>
-</tr>
-<tr>
-<td><code>.text-white</code></td>
-<td><span class="text-white">.text-white</span></td>
-</tr>
-</tbody>
-</table>
-<h3>Background colors</h3>
-<p>These CSS classes can be used to set the background colors of elements in a template or Markdown file. It is recommended to stick to the DSA color palette defined here.</p>
-<table>
-<thead>
-<tr>
-<th>CSS Class</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.bg-red</code></td>
-<td><span class="bg-red">.bg-red</span></td>
-</tr>
-<tr>
-<td><code>.bg-red-1</code></td>
-<td><span class="bg-red-1">.bg-red-1</span></td>
-</tr>
-<tr>
-<td><code>.bg-red-2</code></td>
-<td><span class="bg-red-2">.bg-red-2</span></td>
-</tr>
-<tr>
-<td><code>.bg-red-3</code></td>
-<td><span class="bg-red-3">.bg-red-3</span></td>
-</tr>
-<tr>
-<td><code>.bg-red-4</code></td>
-<td><span class="bg-red-4">.bg-red-4</span></td>
-</tr>
-<tr>
-<td><code>.bg-black</code></td>
-<td><span class="bg-black">.bg-black</span></td>
-</tr>
-<tr>
-<td><code>.bg-black-1</code></td>
-<td><span class="bg-black-1">.bg-black-1</span></td>
-</tr>
-<tr>
-<td><code>.bg-black-2</code></td>
-<td><span class="bg-black-2">.bg-black-2</span></td>
-</tr>
-<tr>
-<td><code>.bg-black-3</code></td>
-<td><span class="bg-black-3">.bg-black-3</span></td>
-</tr>
-<tr>
-<td><code>.bg-black-4</code></td>
-<td><span class="bg-black-4">.bg-black-4</span></td>
-</tr>
-</tbody>
-</table>
-<h3>Link colors</h3>
-<p>These CSS classes can be used to set the colors of links in a template or Markdown file. It is recommended to stick to the DSA color palette defined here. These classes must be set on the parent element where the links are; this makes it possible to use for templates.</p>
-<table>
-<thead>
-<tr>
-<th>CSS Class</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.link-red</code></td>
-<td><span class="link-red"><a href="#">.link-red</a></span></td>
-</tr>
-<tr>
-<td><code>.link-red-1</code></td>
-<td><span class="link-red-1"><a href="#">.link-red-1</a></span></td>
-</tr>
-<tr>
-<td><code>.link-red-2</code></td>
-<td><span class="link-red-2"><a href="#">.link-red-2</a></span></td>
-</tr>
-<tr>
-<td><code>.link-red-3</code></td>
-<td><span class="link-red-3"><a href="#">.link-red-3</a></span></td>
-</tr>
-<tr>
-<td><code>.link-red-4</code></td>
-<td><span class="link-red-4"><a href="#">.link-red-4</a></span></td>
-</tr>
-<tr>
-<td><code>.link-black</code></td>
-<td><span class="link-black text-black-4"><a href="#">.link-black</a></span></td>
-</tr>
-<tr>
-<td><code>.link-black-1</code></td>
-<td><span class="link-black-1 text-black-4"><a href="#">.link-black-1</a></span></td>
-</tr>
-<tr>
-<td><code>.link-black-2</code></td>
-<td><span class="link-black-2 text-black-4"><a href="#">.link-black-2</a></span></td>
-</tr>
-<tr>
-<td><code>.link-black-3</code></td>
-<td><span class="link-black-3 text-black"><a href="#">.link-black-3</a></span></td>
-</tr>
-<tr>
-<td><code>.link-black-4</code></td>
-<td><span class="link-black-4 text-black"><a href="#">.link-black-4</a></span></td>
-</tr>
-</tbody>
-</table>
-<h3>Typography classes</h3>
-<p>These are other CSS classes related to typography that might be useful.</p>
-<h4>Relative font size</h4>
-<p>Set text to an extra large font size that is relative to the width of the screen.</p>
-<div class="text-center text-size-rxl">.text-size-rxl</div>
-<h4>Text shadow</h4>
-<p>Set a text shadow.</p>
-<div class="text-center text-shadow">.text-shadow</div>
-<h4>Align text</h4>
-<p>Justify text along the margins.</p>
-<pre><code>&lt;p class=&quot;text-justify&quot;&gt;Lorem...&lt;/p&gt;
+            <h2>Style and Authoring Guide</h2>
+            <p>Most documents on this website are written in Markdown. This is an easy-to-learn way to format text without needing to learn web markup languages. The purpose of this page is to demonstrate how to write Markdown for this site in particular. There are also <a <a="" href="http://href=" https:="" www.markdownguide.org="" basic-syntax="" "="">Markdown">href="https://www.markdownguide.org/basic-syntax/">Markdown</a> guides available online.</p>
+<h3>Text</h3>
+<pre><code>Markdown text can be made **bold** with double asterisks.
 </code></pre>
-<p class="text-justify">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
-<p>Center text.</p>
-<pre><code>&lt;p class=&quot;text-center&quot;&gt;Lorem...&lt;/p&gt;
+<p>Markdown text can be made <strong>bold</strong> with double asterisks.</p>
+<pre><code>For *italics*, use single asterisks.
 </code></pre>
-<p class="text-center">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
-<h4>Line height adjustments</h4>
-<p>Adjust line heights in small and large sizing.</p>
-<pre><code>&lt;p class=&quot;text-line-sm&quot;&gt;Lorem...&lt;/p&gt;
+<p>For <em>italics</em>, use single asterisks.</p>
+<h3>Headings</h3>
+<p>The title of each document is represented as a level 2 heading in the finished page. The &quot;top level&quot; header of Markdown documents must be level 3 to align with this template. The heading of this section (&quot;Headings&quot;) is as level 3 header.</p>
+<pre><code>#### Level 4
 </code></pre>
-<p class="text-line-sm">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
-<pre><code>&lt;p class=&quot;text-line-lg&quot;&gt;Lorem...&lt;/p&gt;
+<h4>Level 4</h4>
+<pre><code>##### Level 5
 </code></pre>
-<p class="text-line-lg">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
-<!-- #### Text wraping
-Disable word wrapping.
+<h5>Level 5</h5>
+<pre><code>###### Level 6
+</code></pre>
+<h6>Level 6</h6>
+<h3>Images</h3>
+<p>Images will automatically adjust to screens smaller than the given width. The image will be on its own line and centered by default.</p>
+<pre><code>![](https://placehold.co/600x400?text=image)
+</code></pre>
+<p><picture><source type="image/avif" srcset="/style/AM-IFuGbgbKsbgnZ-320.avif 320w, /style/AM-IFuGbgbKsbgnZ-760.avif 760w, /style/AM-IFuGbgbKsbgnZ-1500.avif 1500w" sizes="auto"><source type="image/webp" srcset="/style/AM-IFuGbgbKsbgnZ-320.webp 320w, /style/AM-IFuGbgbKsbgnZ-760.webp 760w, /style/AM-IFuGbgbKsbgnZ-1500.webp 1500w" sizes="auto"><img loading="lazy" decoding="async" src="/style/AM-IFuGbgbKsbgnZ-320.png" alt="" width="1500" height="1000" srcset="/style/AM-IFuGbgbKsbgnZ-320.png 320w, /style/AM-IFuGbgbKsbgnZ-760.png 760w, /style/AM-IFuGbgbKsbgnZ-1500.png 1500w" sizes="auto"></picture></p>
+<p>Images can also be floated left or right. On small screens, these will behave the same as the above image. However, on larger screens, they will float accordingly. Floated images should be given an explicit width in pixels. This is considered its maximum width.</p>
+<pre><code>![](https://placehold.co/200x100){.float-left width=&quot;200&quot;} Commodi ...
+</code></pre>
+<p><picture><source type="image/avif" srcset="/style/wICWd1rRW_ATh4ky-200.avif 200w"><source type="image/webp" srcset="/style/wICWd1rRW_ATh4ky-200.webp 200w"><img loading="lazy" decoding="async" src="/style/wICWd1rRW_ATh4ky-200.png" alt="" class="float-left" width="200" height="100"></picture> Commodi quo consequatur perspiciatis at. Voluptatem saepe repellendus qui nihil sunt voluptatibus qui. Ut ab nostrum ea vel quos ipsum sequi. Dolores atque quisquam quaerat. Quia quas dolores ullam cumque et accusamus non asperiores. Dolorem delectus perspiciatis explicabo optio vel. Consequuntur fuga quo qui amet ipsa quo consequatur perferendis. Rerum a quas eos. Eos sequi sunt. Quod odit qui error inventore.</p>
+<pre><code>![](https://placehold.co/240x180){.float-right width=240} Ipsam ...
+</code></pre>
+<p><picture><source type="image/avif" srcset="/style/2ZSxPAN_GFqg9NA7-240.avif 240w"><source type="image/webp" srcset="/style/2ZSxPAN_GFqg9NA7-240.webp 240w"><img loading="lazy" decoding="async" src="/style/2ZSxPAN_GFqg9NA7-240.png" alt="" class="float-right" width="240" height="180"></picture> Ipsam exercitationem illo voluptatem nemo neque qui est. Rerum laboriosam doloremque
+saepe. Qui et quia omnis deleniti illum delectus et nesciunt. Exercitationem vitae rem nihil accusantium et. Enim dolor aliquid et. Suscipit reiciendis deserunt. Culpa est tempore doloribus nemo. Hic velit doloribus eum natus qui vel dolor quos ut. Autem voluptatem temporibus magni rerum earum fuga autem a exercitationem. Id rem ut repudiandae inventore ut ipsa amet. Libero eius dolores ea voluptatem similique voluptas inventore error quis. Ullam ut vel expedita excepturi asperiores rerum. Eos quo cumque odit quidem eveniet tempora.</p>
 
-```
-<p class="text-nowrap">Lorem...</p>
-```
-
-<p class="text-nowrap">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p> -->
-<h4>Blur</h4>
-<p>Blur text.</p>
-<pre><code>&lt;p class=&quot;blur&quot;&gt;Lorem...&lt;/p&gt;
-</code></pre>
-<p class="blur">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
-<h3>Margins</h3>
-<p>Margin sets varying levels of outside space around the element. This style provides options for small and medium margins.</p>
-<table>
-    <tr><pre>.m-sm</pre></tr>
-    <tr><td class="bg-red-4"><img class="border m-sm w-sm h-sm" <a="" href="http://src=" https:="" robohash.org="" .m-sm?set="set4&quot;"></td></tr>">src="https://robohash.org/.m-sm?set=set4">
-</table>
-<table>
-    <tr><pre>.m-md</pre></tr>
-    <tr><td class="bg-red-4"><img class="border m-md w-sm h-sm" <a="" href="http://src=" https:="" robohash.org="" .m-md?set="set4&quot;"></td></tr>">src="https://robohash.org/.m-md?set=set4">
-</table>
-<h3>Padding</h3>
-<p>Padding sets varying levels of inside space around the element. This style provides options for small and medium levels of padding.</p>
-<table>
-    <tr><td class="bg-red-4"><img class="border p-sm w-sm h-sm" <a="" href="http://src=" https:="" robohash.org="" .p-sm?set="set4&quot;"></td></tr>">src="https://robohash.org/.p-sm?set=set4">
-    <tr><pre>.p-sm</pre></tr>
-</table>
-<table>
-    <tr><td class="bg-red-4"><img class="border p-md w-sm h-sm" <a="" href="http://src=" https:="" robohash.org="" .p-md?set="set4&quot;"></td></tr>">src="https://robohash.org/.p-md?set=set4">
-    <tr><pre>.p-md</pre></tr>
-</table>
-<h3>Block sizing</h3>
-<h4>.h-whole</h4>
-<p>Set element height to viewport height.</p>
-<pre><code>&lt;div class=&quot;h-whole&quot;&gt;&lt;/div&gt;
-</code></pre>
-<div class="h-whole bg-red-4"></div>
-<h4>.w-whole</h4>
-<p>Set element width to viewport width.</p>
-<pre><code>&lt;div class=&quot;w-whole&quot;&gt;&lt;/div&gt;
-</code></pre>
-<p><i>Not shown here so it doesn't break the page</i></p>
-<h4>.h-quarter</h4>
-<p>Set element height to a quarter of the viewport height.</p>
-<pre><code>&lt;div class=&quot;h-quarter&quot;&gt;&lt;/div&gt;
-</code></pre>
-<div class="h-quarter bg-red-4"></div>
-<h4>.h-sm, .w-sm</h4>
-<p>Set element height (or width) to a small size.</p>
-<pre><code>&lt;div class=&quot;h-sm w-sm&quot;&gt;&lt;/div&gt;
-</code></pre>
-<div class="h-sm w-sm bg-red-4"></div>
-<h3>Alignment</h3>
-<table>
-<thead>
-<tr>
-<th>CSS Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.list-linear</code></td>
-<td>linearize a list</td>
-</tr>
-<tr>
-<td><code>.list-spread</code></td>
-<td>spread list items; used with <code>.list-linear</code></td>
-</tr>
-<tr>
-<td><code>.flex</code></td>
-<td>make element a flex container</td>
-</tr>
-<tr>
-<td><code>.v-center</code></td>
-<td>vertically center child elements; used with <code>.flex</code></td>
-</tr>
-<tr>
-<td><code>.h-center</code></td>
-<td>horizontally center child elements; used with <code>.flex</code></td>
-</tr>
-<tr>
-<td><code>.v-base</code></td>
-<td>vertically place child elements along base; used with <code>.flex</code></td>
-</tr>
-</tbody>
-</table>
-<h3>Image filters</h3>
-<h4>.blur</h4>
-<p>Blur the element.</p>
-<div><img class="h-sm blur" <a="" href="http://src=" https:="" robohash.org="" .blur?set="set4&quot;&quot;">src="https://robohash.org/.blur?set=set4" /></div>
-<h4>.obscure</h4>
-<p>Obscure the image.</p>
-<div><img class="h-sm obscure" <a="" href="http://src=" https:="" robohash.org="" .obscure?set="set4&quot;&quot;">src="https://robohash.org/.obscure?set=set4" /></div>
-<h4>.image-fit</h4>
-<p>Cover, center and fit the image within its dimensions.</p>
-<div>
-    <img class="h-sm image-fit" <a="" href="http://src=" https:="" robohash.org="" .image-fit?set="set4&quot;&quot;">src="https://robohash.org/.image-fit?set=set4" />
-</div>
-<h4>.image-background</h4>
-<p>Move the image to the background with its parent element.</p>
-<div style="height: 8rem;">
-    <img class="h-sm image-background" <a="" href="http://src=" https:="" robohash.org="" .image-background?set="set4&quot;&quot;">src="https://robohash.org/.image-background?set=set4" />
-    <code>.image-background</code>
-</div>
-            </section>
         </main>
-        
 
-        <footer class="h-quarter bg-black text-white link-red">
-    <ul id="socials" class="list-linear list-spread v-center p-sm m-auto">
-        <li><a href="https://x.com/dsaiowacity"><i class="fa-brands fa-x-twitter"></i><span class="sm-hide">X</span></a></li>
-        <li><a href="https://www.facebook.com/IowaCityDSA/"><i class="fa-brands fa-facebook-f"></i><span class="sm-hide">Facebook</span></a></li>
-        <!-- <li><a href="#"><i class="fa-brands fa-mastodon"></i><span class="sm-hide">Mastodon</span></a></li> -->
-        <li><a href="https://discord.com/invite/rkqkEKvCyB"><i class="fa-brands fa-discord"></i><span class="sm-hide">Discord</span></a></li>
-        <li><a href="https://www.instagram.com/iowacitydsa/"><i class="fa-brands fa-instagram"></i><span class="sm-hide">Instagram</span></a></li>
-        <li><a href="https://github.com/wjdenny/icdsa"><i class="fa-brands fa-github"></i><span class="sm-hide">GitHub</span></a></li>
-    </ul>
-    <ul id="map" class="list-linear list-spread v-center p-sm m-auto">
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/membership">What Members Do</a></li>
-        <li><a href="/get-involved">Get Involved</a></li>
-        <li><a href="/events">Events</a></li>
-        <li><a href="https://act.dsausa.org/donate/membership/">Join</a></li>
-        <li><a href="https://donorbox.org/icdsa-donation">Donate</a></li>
-        <li><a href="/report-a-grievance/">Report a Grievance</a></li>
-    </ul>
-    <div id="copyright" class="flex v-center h-center text-black-4">&copy;2024 Iowa City Democratic Socialists of America</div>
-</footer>
+        <footer>
+            <ul id="socials">
+                <li><a href="https://x.com/dsaiowacity"><i class="fa-brands fa-x-twitter"></i><span>X</span></a></li>
+                <li><a href="https://www.facebook.com/IowaCityDSA/"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a></li>
+                <!-- <li><a href="#"><i class="fa-brands fa-mastodon"></i><span>Mastodon</span></a></li> -->
+                <li><a href="https://discord.com/invite/rkqkEKvCyB"><i class="fa-brands fa-discord"></i><span>Discord</span></a></li>
+                <li><a href="https://www.instagram.com/iowacitydsa/"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+                <li><a href="https://github.com/wjdenny/icdsa"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
+            </ul>
+            <div id="copyright">&copy;2024 Iowa City Democratic Socialists of America</div>
+        </footer>
     </body>
 </html>
