@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <title>{{ title }}</title>
+        {% endblock %}
+    </head>
+    <body class="full-height text-black link-red-1 text-sans-serif m0">
+        {% include "header.njk" %}
+                    
+        {% block main %}
+        <main>
+            <section class="m-md text-justify">
+                <h2>{{ title }}</h2>
+                <section class="split">
+                    <img src="/assets/images/endorsement_sm_2025-10-06.png" alt="endorsements">
+                    <section>
+                        {{ content | urlize | safe }}
+                    </section>
+                </section>
+            </section>
+        </main>
+        {% endblock %}
+
+        {% include "footer.njk" %}
+    </body>
+</html>
