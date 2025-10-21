@@ -103,3 +103,5 @@ pre code { display: block; background-color: #d7d7d7; width: 100%; padding: 0.5r
 .image-fit { background-size: cover; background-repeat: no-repeat; background-position: center center; }
 .image-background { position: fixed; z-index: -2; }
 section:has(> .image-background) { position: relative; }
+section.split { display: flex; }
+section.split>section { padding-left: 10px; }
