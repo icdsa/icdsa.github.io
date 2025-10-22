@@ -20,7 +20,7 @@ So for every folder in the drive is a few things:
 The following links can be used to sign up for each of the prospective candidates volunteer list:
 -   Newman Abuissa: https://www.newmanforiowacity.com/volunteer
 -   Clara Reynen: https://www.claraforiowacity.com/get-involved
--   Katie Freeman: https://michaeldaroberts.wixsite.com/freeman-for-coralvil
+-   Katie Freeman: https://freeman4coralville.com/
 
 <br>
 We hope you find this information useful for voting and for energizing your participation in the electoral process. 
