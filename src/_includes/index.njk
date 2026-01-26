@@ -25,6 +25,19 @@
             {% endfor %}
         </ul>
     </section>
+
+    <section id="resources" class="m-md text-line-sm text-justify fade-in cover">
+        <h2>General Resources</h2>
+        <ul>
+            {% set regExp = r/latest/g %}
+            {% for project in collections.bylaws %}
+                {% if regExp.test(project.url) %}
+                    <li><a href="{{ project.url}}">{{ project.data.title }}</a></li>
+                {% endif %}
+            {% endfor %}        
+        </ul>
+
+    </section>
     <script>
         const items = document.querySelectorAll('.fade-in');
 

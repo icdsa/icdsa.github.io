@@ -1,6 +1,6 @@
 ---
 title: Bylaws of the Iowa City Local Chapter of the Democratic Socialists of America
-date: 2025-07-26
+date: 2025-12-01
 layout: bylaws.njk
 permalink: bylaws/latest/
 ---
