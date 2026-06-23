@@ -14,15 +14,18 @@ So for every folder in the drive is a few things:
 1. 1: A PDF of the questionnaire and the responses summarized
 2. 2: The full interview audio
 3. 3: A fully split interview audio labeled in order of the questionnaire
-</br>
-</br>
+<br/>
+<br/>
 
 The following links can be used to sign up for each of the prospective candidates volunteer list:
--   Newman Abuissa: https://www.newmanforiowacity.com/volunteer
--   Clara Reynen: https://www.claraforiowacity.com/get-involved
--   Katie Freeman: https://freeman4coralville.com/
+<br/>
+Newman Abuissa: [here](https://www.newmanforiowacity.com/volunteer)
+<br/>
+Clara Reynen: [here](https://www.claraforiowacity.com/get-involved)
+<br/>
+Katie Freeman: [here](https://freeman4coralville.com/)
 
-<br>
+<br/>
 We hope you find this information useful for voting and for energizing your participation in the electoral process. 
 
 There’s a lot of work left to be done, and every little contribution helps.
